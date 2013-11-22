@@ -1,0 +1,11 @@
+common: &common
+  dev_key: "AI39si43R-yMtRCFFx3K8zy0sNit0OQ3aDoWflkRAh9KruEgqLvTAOZM2AKxDHnCQOt821J_nzC72rdDO9wPj6YC4MtZKedxTg"
+  username: "cspltesting"
+  password: "complitech"
+  
+test:
+  <<: *common
+development:
+  <<: *common
+production:
+  <<: *common

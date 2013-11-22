@@ -1,0 +1,53 @@
+<h1>Listing videos</h1>
+<div class = "content">
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Yt video</th>
+        <th>Is complete</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @videos.each do |video| %>
+        <tr>
+          <td><%= video.title %></td>
+          <td><%= video.description %></td>
+          <td><%= video.yt_video_id %></td>
+          <td><%= video.is_complete %></td>
+          <td><%= link_to 'Show', video %></td>
+          <td><%= link_to 'Edit', edit_video_path(video) %></td>
+          <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<div class = "slideInDown">
+  move down
+</div>
+<br>
+
+<%= link_to 'New Video', new_video_path  %>
+
+<div class="view_port">
+  <div class="polling_message">
+    Listening for dispatches
+  </div>
+  <div class="cylon_eye"></div>
+</div>
+
+
+<p>​This is a test</p>
+
+
+  <div class = "bounce">
+    This is a test
+  </div>
+
+<EMBED src="demo.swf" WIDTH="550" HEIGHT="400" ALIGN="">
+</EMBED>
