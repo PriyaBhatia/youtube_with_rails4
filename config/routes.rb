@@ -1,4 +1,5 @@
 YoutubeWithRails4::Application.routes.draw do
+  devise_for :users
   resources :videos do
     new do
       post :upload
