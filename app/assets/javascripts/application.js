@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-migrate
 
 $(document).ready(function(){
 	$('#please_doit').addClass('animated bounceOutLeft');
